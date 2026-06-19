@@ -1,0 +1,9 @@
+services:
+  cchl-bot:
+    build: .
+    container_name: cchl-store-bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
